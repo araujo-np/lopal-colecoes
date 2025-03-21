@@ -44,16 +44,12 @@
          imprimirAlunos(); // chama a função só no carregamento da página
          
          function removerAluno(){
-        if (alunos.length > 0) {
             alunos.pop();  // Remove o último aluno da lista
             alert("Último aluno removido!");
-        } else {
-            alert("A lista está vazia, não há alunos para remover.");
+
+            imprimirAlunos();
         }
 
-        // Após remover um aluno, imprime a lista atualizada
-        imprimirAlunos();
-    }
  
          /*let frutas = ['maçã', 'banana'];
          console.log(frutas);
